@@ -17,9 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WuE-Vk-acx"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpx-Dh-S13" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,7 +38,7 @@
                                 <rect key="frame" x="136" y="318.5" width="102" height="30"/>
                                 <state key="normal" title="Refresh button"/>
                                 <connections>
-                                    <action selector="didPressRefreshButton:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="rbs-MP-AC3"/>
+                                    <action selector="didPressRefreshButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iMb-gc-fZX"/>
                                 </connections>
                             </button>
                         </subviews>

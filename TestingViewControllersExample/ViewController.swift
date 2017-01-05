@@ -11,7 +11,6 @@ class ViewController: UIViewController {
     }
 
     required init?(coder aDecoder: NSCoder) {
-        searchBar = UISearchBar()
         super.init(coder: aDecoder)
     }
 
@@ -30,6 +29,7 @@ class ViewController: UIViewController {
     // MARK: - Private
 
     func setupSearchBar() {
+        searchBar = UISearchBar()
         searchBar.searchBarStyle = .prominent
         searchBar.placeholder = "Search..."
         searchBar.delegate = self
@@ -42,6 +42,7 @@ class ViewController: UIViewController {
     @IBAction func didPressRefreshButton(_ sender: Any) {
         tagger.tagRefreshButtonPressed()
     }
+
 }
 
 extension ViewController: UISearchBarDelegate {
